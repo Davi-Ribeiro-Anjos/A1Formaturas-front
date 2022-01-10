@@ -1,4 +1,5 @@
 import { Button } from "@material-ui/core";
+
 import { useSelectMenu } from "../../../providers/SelectMenu";
 
 import { StylesMaterial } from "../../../styles/MaterialUI";
@@ -18,28 +19,28 @@ const MainContent = () => {
         className={classes.defaultButton}
         onClick={() => alternMenu({ main: false, aboutUs: true })}
       >
-        Quem somos
+        <label className={classes.labelButton}>Quem somos</label>
       </Button>
       <Button
         size="large"
         className={classes.defaultButton}
         onClick={() => alternMenu({ main: false, graduationArea: true })}
       >
-        Área dos Formandos
+        <label className={classes.labelButton}>Área dos Formandos</label>
       </Button>
       <Button
         size="large"
         className={classes.defaultButton}
         onClick={() => setSelectMenu({ main: false, promotion: true })}
       >
-        Promoções
+        <label className={classes.labelButton}>Promoções</label>
       </Button>
       <Button
         size="large"
         className={classes.defaultButton}
-        onClick={() => setSelectMenu({ ...selectMenu, contact: true })}
+        onClick={() => setSelectMenu({ main: false, contact: true })}
       >
-        Contato
+        <label className={classes.labelButton}>Contato</label>
       </Button>
     </div>
   );

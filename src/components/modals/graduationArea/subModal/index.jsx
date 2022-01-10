@@ -25,7 +25,7 @@ const SubGraduationArea = () => {
           alternMenu({ main: false, graduationArea: false }, { register: true })
         }
       >
-        Cadastro Inicial
+        <label className={classes.labelButton}> Cadastro Inicial</label>
       </Button>
       <Button
         size="large"
@@ -37,7 +37,7 @@ const SubGraduationArea = () => {
           )
         }
       >
-        Foto do convite
+        <label className={classes.labelButton}>Foto do convite</label>
       </Button>
       <Button
         size="large"
@@ -49,7 +49,7 @@ const SubGraduationArea = () => {
           )
         }
       >
-        Atualização cadastral
+        <label className={classes.labelButton}>Atualização Cadastral</label>
       </Button>
     </div>
   );

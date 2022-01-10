@@ -2,11 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import tranparencia from "../../galery/transparencia.png";
 
-// xs = mobile, sm = table, md = laptop
+// xs = mobile, sm = table, md = laptop, lg = laptop l , xl = 4k
 
 export const StylesMaterial = makeStyles((theme) => ({
   logo: {
     margin: "0 1vw 0 0",
+    zIndex: 0,
 
     [theme.breakpoints.up("xs")]: {
       width: "10vw",
@@ -30,7 +31,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     margin: "0 .5vw 0 0",
 
     "&:hover": {
-      background: "rgba(158, 158, 158, 0.3)",
+      background: "rgba(158, 158, 158, 0.5)",
       opacity: 1,
     },
 
@@ -52,29 +53,36 @@ export const StylesMaterial = makeStyles((theme) => ({
     },
   },
   defaultButton: {
-    color: theme.palette.common.white,
-
-    fontWeight: 900,
-    fontFamily: "Source Sans Pro",
-
     "&:hover": {
       background: "rgba(158, 158, 158, 0.1)",
+      opacity: 1,
     },
 
     [theme.breakpoints.up("xs")]: {
       width: "60vw",
       height: "20vh",
-      fontSize: "2rem",
       opacity: 1,
     },
 
     [theme.breakpoints.up("sm")]: {
       height: "15vh",
       width: "35vw",
-      fontSize: "1.75rem",
     },
     [theme.breakpoints.up("md")]: {
       opacity: "0.7",
+    },
+  },
+  labelButton: {
+    color: theme.palette.common.white,
+
+    fontWeight: 900,
+    fontFamily: "Source Sans Pro",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "2rem",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.75rem",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "2rem",
@@ -94,7 +102,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("xs")]: {
-      width: "80vw",
+      // width: "80vw",
       height: "90vh",
       marginTop: "20px",
       alignItens: "center",
@@ -102,8 +110,8 @@ export const StylesMaterial = makeStyles((theme) => ({
 
     [theme.breakpoints.up("sm")]: {
       width: "40vw",
-      height: "70vh",
-      marginTop: "9vh",
+      height: "85vh",
+      // marginTop: "9vh",
     },
   },
   aboutUs: {
@@ -133,7 +141,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     marginBottom: "15px",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1.5rem",
+      fontSize: "1.35rem",
     },
     [theme.breakpoints.up("sm")]: {
       fontSize: "2rem",
@@ -175,7 +183,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     marginBottom: "10px",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "0.8rem",
+      fontSize: "0.75rem",
     },
 
     [theme.breakpoints.up("md")]: {
@@ -186,6 +194,16 @@ export const StylesMaterial = makeStyles((theme) => ({
       fontSize: "1.25rem",
       marginBottom: "15px",
     },
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    height: "50vh",
+  },
+  inputForm: {
+    width: "100%",
+    height: "10vh",
+    fontFamily: "Source Sans Pro",
   },
   baseModal: {
     [theme.breakpoints.up("xs")]: {

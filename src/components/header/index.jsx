@@ -6,7 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import { StylesMaterial } from "../../styles/MaterialUI";
 import { AppHeader } from "../../styles/StyledComponents";
-import logo from "../../galery/logo-a1.png";
+import logo from "../../galery/logoA1.png";
 
 import BaseModal from "../modals/base";
 import MainContent from "../modals/main";
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       <AppHeader>
-        <img className={classes.logo} src={logo} alt="logo a1" />
+        <img className={classes.logo} src={logo} alt="Logo A1" />
         <a
           href="https://www.instagram.com/a1formaturasoficial/"
           target="_blank"
@@ -51,11 +51,11 @@ const Header = () => {
             <TwitterIcon className={classes.themeIconButton} />
           </IconButton>
         </a>
-        <IconButton className={classes.iconButton}>
-          <MenuIcon
-            className={classes.themeIconButton}
-            onClick={() => setSelectMenu({ ...selectMenu, main: true })}
-          />
+        <IconButton
+          className={classes.iconButton}
+          onClick={() => setSelectMenu({ ...selectMenu, main: true })}
+        >
+          <MenuIcon className={classes.themeIconButton} />
         </IconButton>
         <BaseModal menu={"main"} open={selectMenu.main} setOpen={setSelectMenu}>
           <MainContent setOpen={setSelectMenu} />

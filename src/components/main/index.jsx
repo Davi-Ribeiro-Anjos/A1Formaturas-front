@@ -1,6 +1,7 @@
 import { useSelectMenu } from "../../providers/SelectMenu";
 
 import AboutUs from "../modals/aboutUs";
+import Contact from "../modals/contact";
 import GraduationArea from "../modals/graduationArea";
 import Promotion from "../modals/promotion";
 
@@ -12,7 +13,7 @@ const Main = () => {
       {selectMenu.aboutUs && <AboutUs />}
       {selectMenu.graduationArea && <GraduationArea />}
       {selectMenu.promotion && <Promotion />}
-      {selectMenu.contact && <div>Hello 4</div>}
+      {selectMenu.contact && <Contact />}
     </div>
   );
 };
