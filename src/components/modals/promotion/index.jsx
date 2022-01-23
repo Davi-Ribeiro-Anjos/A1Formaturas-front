@@ -1,13 +1,11 @@
-import { StylesMaterial } from "../../../styles/MaterialUI";
-
 import BaseModal from "../base";
+import ImgPromo from "../../../galery/promo.png";
 
 import { useSelectMenu } from "../../../providers/SelectMenu";
+import ButtonBack from "../../buttonBack";
 
 const Promotion = () => {
   const { selectMenu, setSelectMenu } = useSelectMenu();
-
-  const classes = StylesMaterial();
 
   return (
     <>
@@ -22,9 +20,16 @@ const Promotion = () => {
             top: "50%",
             left: "50%",
             transform: "translateX(-50%) translateY(-50%)",
+            justifyContent: "space-evenly",
+            width: "90%",
           }}
         >
-          <h2 className={classes.h2}>Aguarde, em breve teremos novidades!</h2>
+          <ButtonBack models={{ promotion: false, main: true }} />
+          <img
+            style={{ width: "100%", marginTop: "5vh" }}
+            src={ImgPromo}
+            alt="Imagem Promoção"
+          />
         </div>
       </BaseModal>
     </>

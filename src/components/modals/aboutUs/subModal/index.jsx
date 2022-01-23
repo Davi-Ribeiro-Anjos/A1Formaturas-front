@@ -1,12 +1,23 @@
 import { StylesMaterial } from "../../../../styles/MaterialUI";
 import ButtonBack from "../../../buttonBack";
+import ButtonMap from "../../../buttonMap";
 
 const SubAboutUs = () => {
   const classes = StylesMaterial();
 
   return (
     <div className={classes.aboutUs}>
-      <ButtonBack models={{ aboutUs: false, main: true }} />
+      <div
+        style={{
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "space-evenly",
+          margin: "15px 0",
+        }}
+      >
+        <ButtonBack models={{ aboutUs: false, main: true }} />
+        <ButtonMap />
+      </div>
       <h2 className={classes.h2}>
         35 anos dedicados ao maior sonho da sua vida.
       </h2>

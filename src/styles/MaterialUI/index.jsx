@@ -31,7 +31,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     margin: "0 .5vw 0 0",
 
     "&:hover": {
-      background: "rgba(158, 158, 158, 0.5)",
+      background: "rgba(158, 158, 158, 0.6)",
       opacity: 1,
     },
 
@@ -54,7 +54,7 @@ export const StylesMaterial = makeStyles((theme) => ({
   },
   defaultButton: {
     "&:hover": {
-      background: "rgba(158, 158, 158, 0.1)",
+      background: "rgba(158, 158, 158, 0.4)",
       opacity: 1,
     },
 
@@ -105,7 +105,6 @@ export const StylesMaterial = makeStyles((theme) => ({
       // width: "80vw",
       height: "90vh",
       marginTop: "20px",
-      alignItens: "center",
     },
 
     [theme.breakpoints.up("sm")]: {
@@ -141,7 +140,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     marginBottom: "15px",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1.35rem",
+      fontSize: "1.4rem",
     },
     [theme.breakpoints.up("sm")]: {
       fontSize: "2rem",
@@ -162,7 +161,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     fontWeight: 600,
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1.15rem",
+      fontSize: "1.25rem",
       marginBottom: "10px",
     },
 
@@ -183,11 +182,14 @@ export const StylesMaterial = makeStyles((theme) => ({
     marginBottom: "10px",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "0.75rem",
+      fontSize: "0.8rem",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "0.9rem",
     },
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.10rem",
+      fontSize: "1rem",
       marginBottom: "15px",
     },
     [theme.breakpoints.up("lg")]: {

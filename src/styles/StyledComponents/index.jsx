@@ -1,4 +1,28 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
+
+export const down = keyframes`
+from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+export const up = keyframes`
+from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+`;
 
 export const Body = styled.div`
   position: absolute;
@@ -7,7 +31,7 @@ export const Body = styled.div`
   overflow: hidden;
 `;
 
-export const AppHeader = styled.header`
+export const AppHeaderDown = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,7 +39,17 @@ export const AppHeader = styled.header`
 
   margin-top: 5vh;
 
+  animation-name: ${down};
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   z-index: 0;
+`;
+
+export const AppHeaderUp = styled(AppHeaderDown)`
+  animation-name: ${up};
 `;
 
 export const VideoA1 = styled.video`

@@ -9,6 +9,7 @@ export const SelectMenuProvider = ({ children }) => {
     graduationArea: false,
     promotion: false,
     contact: false,
+    map: false,
   });
   const [selectSub, setSelectSub] = useState({
     graduationArea: {
@@ -17,7 +18,6 @@ export const SelectMenuProvider = ({ children }) => {
       updateRegister: false,
     },
   });
-  // console.log(selectMenu);
 
   return (
     <SelectMenuContext.Provider

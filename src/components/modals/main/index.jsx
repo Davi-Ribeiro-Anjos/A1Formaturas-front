@@ -15,7 +15,6 @@ const MainContent = () => {
   return (
     <div className={classes.titleDiv}>
       <Button
-        size="large"
         className={classes.defaultButton}
         onClick={() => alternMenu({ main: false, aboutUs: true })}
       >
