@@ -1,18 +1,18 @@
 import { Button } from "@material-ui/core";
 
-import { useSelectMenu } from "../../../../providers/SelectMenu";
+// import { useSelectMenu } from "../../../../providers/SelectMenu";
 import { StylesMaterial } from "../../../../styles/MaterialUI";
 import ButtonBack from "../../../buttonBack";
 
 const SubGraduationArea = () => {
-  const { selectMenu, setSelectMenu, selectSub, setSelectSub } =
-    useSelectMenu();
+  // const { selectMenu, setSelectMenu, selectSub, setSelectSub } =
+  //   useSelectMenu();
   const classes = StylesMaterial();
 
-  const alternMenu = (main, sub) => {
-    setSelectMenu({ ...selectMenu, ...main });
-    setSelectSub({ ...selectSub, ...sub });
-  };
+  // const alternMenu = (main, sub) => {
+  //   setSelectMenu({ ...selectMenu, ...main });
+  //   setSelectSub({ ...selectSub, ...sub });
+  // };
 
   return (
     <div className={classes.titleDiv}>

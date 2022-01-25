@@ -37,9 +37,8 @@ const SubContact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
-    axios
+  const onSubmit = async (data) => {
+    await axios
       .post("http://localhost:3001/contact/send", data)
       .then((response) => {
         console.log(response);

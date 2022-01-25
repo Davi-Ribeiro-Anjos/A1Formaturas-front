@@ -94,7 +94,6 @@ export const StylesMaterial = makeStyles((theme) => ({
   titleDiv: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-evenly",
     alignItems: "center",
 
     "& > *": {
@@ -110,6 +109,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: "40vw",
       height: "85vh",
+      justifyContent: "space-evenly",
       // marginTop: "9vh",
     },
   },
@@ -161,8 +161,8 @@ export const StylesMaterial = makeStyles((theme) => ({
     fontWeight: 600,
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1.25rem",
-      marginBottom: "10px",
+      fontSize: "1.5rem",
+      marginBottom: "5px",
     },
 
     [theme.breakpoints.up("md")]: {
