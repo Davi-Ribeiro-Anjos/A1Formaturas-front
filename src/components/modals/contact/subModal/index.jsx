@@ -39,7 +39,7 @@ const SubContact = () => {
 
   const onSubmit = async (data) => {
     await axios
-      .post("http://localhost:3001/contact/send", data)
+      .post("https://a1formaturas-contato.herokuapp.com/contact/send", data)
       .then((response) => {
         console.log(response);
       })
