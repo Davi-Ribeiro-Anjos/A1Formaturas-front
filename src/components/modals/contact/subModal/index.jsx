@@ -6,8 +6,7 @@ import { Button, TextField } from "@material-ui/core";
 
 import ButtonBack from "../../../buttonBack";
 import { StylesMaterial } from "../../../../styles/MaterialUI";
-
-// const theme =
+import axios from "axios";
 
 const SubContact = () => {
   const classes = StylesMaterial();
@@ -25,7 +24,7 @@ const SubContact = () => {
         .integer()
         .min(11111111111)
         .max(99999999999),
-      mensage: yup.string().required(),
+      message: yup.string().required(),
     })
     .required();
 
@@ -40,6 +39,16 @@ const SubContact = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    axios
+      .post("http://localhost:3001/contact/send", data)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    reset();
   };
 
   return (
@@ -95,14 +104,13 @@ const SubContact = () => {
             {...register("phone")}
           />
           <TextField
-            // id="standard-error-helper-text"
-            id="standard-basic"
+            id="standard-error-helper-text"
             className={classes.inputForm}
             label="Mensagem"
             variant="standard"
-            error={!!errors.mensage}
-            helperText={!!errors.mensage && "Campo Obrigatório"}
-            {...register("mensage")}
+            error={!!errors.message}
+            helperText={!!errors.message && "Campo Obrigatório"}
+            {...register("message")}
           />
           <Button type={"submit"}>Enviar</Button>
         </form>

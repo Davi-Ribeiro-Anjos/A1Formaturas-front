@@ -31,7 +31,7 @@ export const StylesMaterial = makeStyles((theme) => ({
     margin: "0 .5vw 0 0",
 
     "&:hover": {
-      background: "rgba(158, 158, 158, 0.6)",
+      // background: "rgba(158, 158, 158, 0.6)",
       opacity: 1,
     },
 
@@ -54,7 +54,7 @@ export const StylesMaterial = makeStyles((theme) => ({
   },
   defaultButton: {
     "&:hover": {
-      background: "rgba(158, 158, 158, 0.4)",
+      // background: "rgba(158, 158, 158, 0.4)",
       opacity: 1,
     },
 
@@ -205,7 +205,6 @@ export const StylesMaterial = makeStyles((theme) => ({
   inputForm: {
     width: "100%",
     height: "10vh",
-    fontFamily: "Source Sans Pro",
   },
   baseModal: {
     [theme.breakpoints.up("xs")]: {
