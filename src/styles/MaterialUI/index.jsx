@@ -200,11 +200,7 @@ export const StylesMaterial = makeStyles((theme) => ({
   form: {
     display: "flex",
     flexDirection: "column",
-    height: "50vh",
-  },
-  inputForm: {
-    width: "100%",
-    height: "10vh",
+    height: "auto",
   },
   baseModal: {
     [theme.breakpoints.up("xs")]: {
