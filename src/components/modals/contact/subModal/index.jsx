@@ -25,6 +25,7 @@ const SubContact = () => {
       name: yup.string().required(),
       city: yup.string().required(),
       college: yup.string().required(),
+      course: yup.string().required(),
       email: yup.string().required().email(),
       phone: yup
         .number()
@@ -89,7 +90,21 @@ const SubContact = () => {
                 backgroundColor: "rgb(184, 184, 184)",
               }}
               margin="dense"
-              label="Cidade que estuda"
+              label="Instituição de Ensino"
+              variant="filled"
+              error={!!errors.college}
+              helperText={!!errors.college && "Campo Obrigatório"}
+              {...register("college")}
+            />
+            <TextField
+              id="filled-basic"
+              fullWidth
+              style={{
+                borderRadius: "5px",
+                backgroundColor: "rgb(184, 184, 184)",
+              }}
+              margin="dense"
+              label="Cidade"
               variant="filled"
               error={!!errors.city}
               helperText={!!errors.city && "Campo Obrigatório"}
@@ -103,11 +118,25 @@ const SubContact = () => {
                 backgroundColor: "rgb(184, 184, 184)",
               }}
               margin="dense"
-              label="Instituição/Campus"
+              label="Curso"
               variant="filled"
-              error={!!errors.college}
-              helperText={!!errors.college && "Campo Obrigatório"}
-              {...register("college")}
+              error={!!errors.course}
+              helperText={!!errors.course && "Campo Obrigatório"}
+              {...register("course")}
+            />
+            <TextField
+              id="filled-basic"
+              fullWidth
+              style={{
+                borderRadius: "5px",
+                backgroundColor: "rgb(184, 184, 184)",
+              }}
+              margin="dense"
+              label="Telefone/Whatsapp"
+              variant="filled"
+              error={!!errors.phone}
+              helperText={!!errors.phone && "Coloque o DDD e o número"}
+              {...register("phone")}
             />
             <TextField
               id="filled-basic"
@@ -122,20 +151,6 @@ const SubContact = () => {
               error={!!errors.email}
               helperText={!!errors.email && " Email inválido ou Campo Vazio"}
               {...register("email")}
-            />
-            <TextField
-              id="filled-basic"
-              fullWidth
-              style={{
-                borderRadius: "5px",
-                backgroundColor: "rgb(184, 184, 184)",
-              }}
-              margin="dense"
-              label="Fone/Whatsapp"
-              variant="filled"
-              error={!!errors.phone}
-              helperText={!!errors.phone && "Coloque o DDD e o número"}
-              {...register("phone")}
             />
             <TextField
               id="filled-basic"

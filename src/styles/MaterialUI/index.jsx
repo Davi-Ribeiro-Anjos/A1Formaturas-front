@@ -26,6 +26,7 @@ export const StylesMaterial = makeStyles((theme) => ({
   },
   backButton: {
     color: theme.palette.common.white,
+    // scale: "1.5",
   },
   iconButton: {
     margin: "0 .5vw 0 0",

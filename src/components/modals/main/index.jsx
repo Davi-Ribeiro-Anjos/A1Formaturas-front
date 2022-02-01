@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 
 import { useSelectMenu } from "../../../providers/SelectMenu";
+import ButtonBack from "../../buttonBack";
 
 import { StylesMaterial } from "../../../styles/MaterialUI";
 
@@ -14,6 +15,7 @@ const MainContent = () => {
 
   return (
     <div className={classes.titleDiv}>
+      <ButtonBack models={{ main: false }} />
       <Button
         className={classes.defaultButton}
         onClick={() => alternMenu({ main: false, aboutUs: true })}

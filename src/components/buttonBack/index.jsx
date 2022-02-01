@@ -13,7 +13,11 @@ const ButtonBack = ({ models }) => {
 
   return (
     <div className={classes.divBack}>
-      <IconButton className={classes.iconButton} onClick={() => backModel()}>
+      <IconButton
+        size="large"
+        className={classes.iconButton}
+        onClick={() => backModel()}
+      >
         <ArrowBackIcon className={classes.backButton} />
       </IconButton>
     </div>
