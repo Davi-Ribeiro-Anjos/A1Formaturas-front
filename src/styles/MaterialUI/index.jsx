@@ -150,7 +150,7 @@ export const StylesMaterial = makeStyles((theme) => ({
       marginBottom: "20px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "3rem",
+      fontSize: "2.75rem",
       marginBottom: "15px",
     },
   },

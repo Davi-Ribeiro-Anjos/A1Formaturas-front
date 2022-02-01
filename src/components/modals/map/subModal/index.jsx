@@ -22,7 +22,7 @@ const styleMap = makeStyles((theme) => ({
       fontSize: "0.9rem",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.1rem",
+      fontSize: "1rem",
     },
   },
   div: {
