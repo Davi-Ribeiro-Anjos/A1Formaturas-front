@@ -30,18 +30,6 @@ export const StylesMaterial = makeStyles((theme) => ({
   },
   iconButton: {
     margin: "0 .5vw 0 0",
-
-    "&:hover": {
-      // background: "rgba(158, 158, 158, 0.6)",
-      opacity: 1,
-    },
-
-    [theme.breakpoints.up("xs")]: {
-      opacity: 1,
-    },
-    [theme.breakpoints.up("md")]: {
-      opacity: "0.7",
-    },
   },
   themeIconButton: {
     color: theme.palette.common.white,
