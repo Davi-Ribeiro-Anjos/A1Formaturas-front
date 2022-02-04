@@ -155,13 +155,12 @@ export const StylesMaterial = makeStyles((theme) => ({
       fontSize: "1.5rem",
       marginBottom: "5px",
     },
-
     [theme.breakpoints.up("md")]: {
-      fontSize: "2rem",
+      fontSize: "1.75rem",
       marginBottom: "15px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "2.15rem",
+      fontSize: "2rem",
     },
   },
   p: {
@@ -184,7 +183,7 @@ export const StylesMaterial = makeStyles((theme) => ({
       marginBottom: "15px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.15rem",
+      fontSize: "1.05rem",
       marginBottom: "15px",
     },
   },
