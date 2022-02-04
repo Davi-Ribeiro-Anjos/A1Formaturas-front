@@ -26,7 +26,9 @@ export const StylesMaterial = makeStyles((theme) => ({
   },
   backButton: {
     color: theme.palette.common.white,
-    // scale: "1.5",
+    width: "10vw",
+    height: "7.5vh",
+    margin: "0 .5vw 0 0",
   },
   iconButton: {
     margin: "0 .5vw 0 0",
@@ -139,7 +141,7 @@ export const StylesMaterial = makeStyles((theme) => ({
       marginBottom: "20px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "2.75rem",
+      fontSize: "2.65rem",
       marginBottom: "10px",
     },
   },
@@ -159,7 +161,7 @@ export const StylesMaterial = makeStyles((theme) => ({
       marginBottom: "15px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "2.25rem",
+      fontSize: "2.15rem",
     },
   },
   p: {
@@ -182,7 +184,7 @@ export const StylesMaterial = makeStyles((theme) => ({
       marginBottom: "15px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.25rem",
+      fontSize: "1.15rem",
       marginBottom: "15px",
     },
   },

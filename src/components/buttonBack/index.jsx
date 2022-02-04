@@ -1,4 +1,4 @@
-import { IconButton } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useSelectMenu } from "../../providers/SelectMenu";
 import { StylesMaterial } from "../../styles/MaterialUI";
@@ -13,13 +13,15 @@ const ButtonBack = ({ models }) => {
 
   return (
     <div className={classes.divBack}>
-      <IconButton
-        size="large"
-        className={classes.iconButton}
+      <Button
         onClick={() => backModel()}
+        className={classes.backButton}
+        startIcon={<ArrowBackIcon style={{ color: "#fff" }} />}
       >
-        <ArrowBackIcon className={classes.backButton} />
-      </IconButton>
+        <label style={{ fontFamily: "Source Sans Pro", color: "#fff" }}>
+          Voltar
+        </label>
+      </Button>
     </div>
   );
 };
