@@ -1,6 +1,6 @@
 import { StylesMaterial } from "../../../../styles/MaterialUI";
 import ButtonBack from "../../../buttonBack";
-import ButtonMap from "../../../buttonMap";
+// import ButtonMap from "../../../buttonMap";
 
 const SubAboutUs = () => {
   const classes = StylesMaterial();
@@ -16,7 +16,7 @@ const SubAboutUs = () => {
         }}
       >
         <ButtonBack models={{ aboutUs: false, main: true }} />
-        <ButtonMap />
+        {/* <ButtonMap /> */}
       </div>
       <h2 className={classes.h2}>
         35 anos dedicados ao maior sonho da sua vida.
