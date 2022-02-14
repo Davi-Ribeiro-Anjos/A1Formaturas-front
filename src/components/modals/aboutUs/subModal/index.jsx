@@ -19,12 +19,12 @@ const SubAboutUs = () => {
         {/* <ButtonMap /> */}
       </div>
       <h2 className={classes.h2}>
-        35 anos dedicados ao maior sonho da sua vida.
+        38 anos dedicados ao maior sonho da sua vida.
       </h2>
       <div>
         <h3 className={classes.h3}>Quem somos?</h3>
         <p className={classes.p}>
-          Há mais de 35 anos a A1 Formaturas é sinônimo de dedicação,
+          Há mais de 38 anos a A1 Formaturas é sinônimo de dedicação,
           credibilidade, pontualidade e realização no segmento de eventos de
           formaturas.
         </p>
