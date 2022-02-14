@@ -103,6 +103,9 @@ export const StylesMaterial = makeStyles((theme) => ({
       justifyContent: "space-evenly",
       // marginTop: "9vh",
     },
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "3vh",
+    },
   },
   aboutUs: {
     display: "flex",
@@ -144,6 +147,9 @@ export const StylesMaterial = makeStyles((theme) => ({
       fontSize: "2.65rem",
       marginBottom: "10px",
     },
+    [theme.breakpoints.up("1300")]: {
+      fontSize: "2.4rem",
+    },
   },
   h3: {
     color: theme.palette.common.white,
@@ -161,6 +167,9 @@ export const StylesMaterial = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "2rem",
+    },
+    [theme.breakpoints.up("1300")]: {
+      fontSize: "1.8rem",
     },
   },
   p: {
@@ -185,6 +194,9 @@ export const StylesMaterial = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.05rem",
       marginBottom: "15px",
+    },
+    [theme.breakpoints.up("1300")]: {
+      fontSize: "0.9rem",
     },
   },
   form: {
